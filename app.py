@@ -11,13 +11,10 @@ st.set_page_config(
     page_icon="🌿",
     layout="centered"
 )
-
 # ── Class names ────────────────────────────────────────────────────
 class_names = ["bacterial_blight", "curl_virus", "fussarium_wilt", "healthy"]
-
 # ── Image transform (no augmentation for inference) ────────────────
 img_size = 224
-
 transform = transforms.Compose([
     transforms.Resize((img_size, img_size)),
     transforms.ToTensor(),
